@@ -1,0 +1,286 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    color: wheat;
+    text-align: center;
+    background-color: rgb(22, 22, 69);
+}
+
+header {
+    // display: flex;
+    padding: 2%;
+    color: black;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 2%;
+    text-align: center;
+    background-color: rgb(37, 185, 153);
+}
+
+select {
+    padding: 5%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(210, 102, 30);
+}
+
+.sectionPlayer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.playerSilouette {
+    width: 3%;
+}
+
+.playerOneHead {
+    width: 70%;
+    height: 35%;
+    color: black;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    background-color: red;
+    animation: spin 2s linear infinite;
+}
+
+.playerTwoHead {
+    width: 70%;
+    height: 35%;
+    color: black;
+    padding-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 50%;
+    background-color: yellow;
+    // animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.playerBody {
+    width: 100%;
+    height: 3vh;
+    padding-top: 10%;
+    background-color: rgb(113, 113, 113);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+#myCanvas {
+    margin: auto;
+    padding: 5px;
+    border: 3px solid black;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.circle {
+    height: 60px;
+    width: 60px;
+    margin: 5px;
+    border-radius: 50px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.red {
+    height: 60px;
+    width: 60px;
+    border: 3px solid black;
+    background-color: red;
+}
+
+.yellow {
+    height: 60px;
+    width: 60px;
+    background-color: yellow;
+}
+
+// Jouers
+nav {
+    height: 20%;
+    padding: 3%;
+    background-color: rgb(193, 22, 22);
+}
+
+aside {
+    height: 20%;
+    padding: 3%;
+    background-color: rgb(195, 147, 3);
+}
+
+.score{
+    width: 5%;
+    display: flex;
+}
+
+// buttons
+.reset {
+    border-radius: 3px;
+    border: none;
+    font-size: 14px;
+    color: wheat;
+    background-color: rgb(210, 102, 30);
+    ;
+}
+
+// settings
+
+.settings {
+    right: 2%;
+    bottom: 2%;
+    position: absolute;
+}
+
+.fs {
+    font-size: 2em;
+    width: 50%;
+    cursor: pointer;
+}
+
+.fss {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 50px;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+// Settings game
+#myCanvasSettings {
+    margin: auto;
+    padding: 5px;
+    border: 3px solid black;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.lignes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mySettings {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.mySettings .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.mySettings a:hover {
+    color: #f1f1f1;
+}
+
+.settingGrille{
+    display: flex;
+}
+
+.bgcGrille{
+    width: 40%;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgba(163, 124, 124, 0.452);
+}
+
+.bgCouleur0{
+    background-color: #0000ff;
+}
+.bgCouleur1{
+    background-color:  #ffc107 ;
+}
+.bgCouleur2{
+    background-color:  #d63384 ;
+}
+.bgCouleur3{
+    background-color:  #6f42c1 ;
+}
+.bgCouleur4{
+    background-color:  #198754 ;
+}
+.bgCouleur5{
+    background-color:  #66BFBF ;
+}
+.bgCouleur6{
+    background-color:  #d35400 ;
+}
+.bgCouleur7{
+    background-color:  #e74c3c ;
+}
+.bgCouleur8{
+    background-color:  #40d47e ;
+}
+
+.grilleColor{
+    padding: 20px;
+    border-radius: 50px;
+}
+

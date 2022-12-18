@@ -1,0 +1,23 @@
+{
+  "name": "connct4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpitechWebAcademiePromo2023/W-JSC-501-PAR-1-2-puissance4-gael.wumba-buatu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpitechWebAcademiePromo2023/W-JSC-501-PAR-1-2-puissance4-gael.wumba-buatu/issues"
+  },
+  "homepage": "https://github.com/EpitechWebAcademiePromo2023/W-JSC-501-PAR-1-2-puissance4-gael.wumba-buatu#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
